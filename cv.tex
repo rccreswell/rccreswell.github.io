@@ -1,14 +1,19 @@
-\documentclass[11pt]{article}
-\usepackage[a4paper,margin=1in]{geometry}
+\documentclass[10pt]{article}
+
+\usepackage[letterpaper,margin=.5in]{geometry}
+
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy} 
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\cfoot{\thepage\ / \pageref{LastPage}}
 
 \usepackage{fontawesome}
-\usepackage{fontspec}
 
-\setmainfont[UprightFont       = *Regular ,
-             BoldFont          = *Bold ,
-             ItalicFont        = *Italic ,
-             BoldItalicFont    = *BoldItalic ,
-             Ligatures=TeX]{Junicode Two Beta}
+
+\usepackage[T1]{fontenc}
+\usepackage{palatino}
 
 
 % Typesetting
@@ -19,7 +24,6 @@
 \usepackage{enumitem}
 
 
-
 \renewcommand\labelitemi{\(\circ\)}
 \renewcommand\labelitemii{\(\circ\)}
 
@@ -27,72 +31,57 @@
 \begin{document}
 
 
+
 \noindent\parbox{.3\textwidth}{\LARGE \textbf{\textls[35]{Richard Creswell}}}
 \parbox{.3\textwidth}{~}
 \parbox{.4\textwidth}{
-\-\hspace{0cm}{\faEnvelopeO}~~richard.creswell@hertford.ox.ac.uk\\
+\-\hspace{0cm}{\faEnvelopeO}~~richard.creswell@cs.ox.ac.uk\\
 \-\hspace{0cm}{\faWhatsapp}~~\texttt{\footnotesize +44 7491880443}~~or~~\texttt{\footnotesize +1 617-752-2508}\\
-\-\hspace{0cm}{\faGithub}~~github.com/rccreswell\\
 { \faHome}~~Oxford, England
 }
 
 \vspace{0.6cm}
 
-\noindent {\large \textbf{\textsc{\textls[50]{Research Interests}}}}\vspace{-2.75mm} \\
-\rule{\textwidth}{0.4pt}
-\vspace{-7mm}
-\begin{itemize}[leftmargin=*]
-\setlength{\itemsep}{2pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item Statistical inference for challenging time series models.
-\item Epidemiology and computational biology of infectious diseases.
-\item Efficient inference for applied Bayesian nonparametrics.
-\end{itemize}
-
- 
-
-\vspace{0.4cm}
 
 
-
-
-\noindent {\large \textbf{\textsc{\textls[50]{Present Positions}}}}\vspace{-2.75mm} \\
+\noindent {\large \textbf{\textsc{\textls[50]{Academic Positions}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
 \vspace{0.1mm}
-\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Eric and Wendy Schmidt AI in Science Postdoctoral Fellow}}
-\parbox{.35\textwidth}{\raggedleft \emph{Starting 2024 Jan.}}
-Department of Computer Science, University of Oxford, Oxford, England
-\vspace{0.4cm}
-
 \noindent\parbox{.65\textwidth}{\raggedright  \textbf{Associate Research Fellow}}
-\parbox{.35\textwidth}{\raggedleft 2023 July--}
+\parbox{.35\textwidth}{\raggedleft \emph{2023 July--}}
 Reuben College, University of Oxford, Oxford, England
 
 \vspace{0.4cm}
 
-\noindent\parbox{.65\textwidth}{\raggedright  \textbf{EPSRC Doctoral Prize Researcher}}
-\parbox{.35\textwidth}{\raggedleft 2023 July--}
+\noindent\parbox{.85\textwidth}{\raggedright  \textbf{EPSRC Doctoral Prize Researcher / Eric and Wendy Schmidt AI in Science Postdoctoral Fellow}}
+\parbox{.15\textwidth}{\raggedleft \emph{2023 July--}}
 Department of Computer Science, University of Oxford, Oxford, England
 
-\vspace{0.6cm}
+\vspace{0.4cm}
 
 
 
 
-\noindent {\large \textbf{\textsc{\textls[50]{Past Positions}}}}\vspace{-2.75mm} \\
-\rule{\textwidth}{0.4pt}
-\vspace{0.1mm}
 \noindent\parbox{.65\textwidth}{\raggedright  \textbf{Doctoral Student}}
-\parbox{.35\textwidth}{\raggedleft 2019 Oct--2023 July}
+\parbox{.35\textwidth}{\raggedleft \emph{2019 Oct.--2023 July}}
 Department of Computer Science, University of Oxford, Oxford, England
 
 
 \vspace{0.4cm}
 
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{Research Associate}}
-\parbox{.25\textwidth}{\raggedleft 2017 July--2019 Sep.}
-Massachusetts Host-Microbiome Center, Brigham \& Women's Hospital,\\ Harvard Medical School, Boston, Massachusetts
+\noindent\parbox{.75\textwidth}{\raggedright \textbf{IS Programmer Analyst II / Research Associate}}
+\parbox{.25\textwidth}{\raggedleft \emph{2017 July--2019 Sep.}}
+Gerber Lab, Brigham \& Women's Hospital, Harvard Medical School, Boston, Massachusetts
+
+
+\vspace{0.4cm}
+
+\noindent\parbox{.75\textwidth}{\raggedright \textbf{Undergraduate Research Assistant}}
+\parbox{.25\textwidth}{\raggedleft \emph{2014 May--2015 Jan.}}
+Herman Group, Columbia University, New York, New York
+
+
+
 
 
 
@@ -102,39 +91,75 @@ Massachusetts Host-Microbiome Center, Brigham \& Women's Hospital,\\ Harvard Med
 
 \noindent {\large \textbf{\textsc{\textls[50]{Education}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
-\vspace{0.1mm}
-\noindent\parbox{.65\textwidth}{\raggedright \textit{{\fontspec[RawFeature=+swsh]{Junicode Two Beta}D}octor of Philosophy,} \textbf{Computer Science}}
-\parbox{.35\textwidth}{\raggedleft \emph{(in progress; anticipated 2023)}}
-University of Oxford, Oxford, England
-
-\vspace{0.4cm}
-
-\noindent\parbox{.75\textwidth}{\raggedright \textit{Master of Science,} \textbf{Applied Mathematics}}
-\parbox{.25\textwidth}{\raggedleft  ~}
-Columbia University, New York, New York
+\vspace{1mm}
+\noindent\parbox{.75\textwidth}{\raggedright \textbf{D.Phil.\ (Ph.D.) Computer Science,} University of Oxford, Oxford, England}
+\parbox{.25\textwidth}{\raggedleft \emph{~2023}}
+\vspace{-.7cm}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+    \item Supervisors: Prof.\ David Gavaghan, Dr.\ Ben Lambert; Thesis examiners: Prof.\ Ruth Baker, Dr.\ Louise Dyson
+\end{itemize}
 
 
-\vspace{0.4cm}
+\vspace{0.1cm}
 
-\noindent\parbox{.75\textwidth}{\raggedright \emph{Bachelor of Science,} \textbf{Applied Physics \emph{summa cum laude}}}
-\parbox{.25\textwidth}{\raggedleft  ~}
-Columbia University, New York, New York
+\noindent\parbox{.9\textwidth}{\raggedright \textbf{M.Sc.\ Applied Mathematics,} Columbia University, New York, New York (GPA: 4.0/4.0)}
+\parbox{.1\textwidth}{\raggedleft  \emph{~2017}}
+
+
+\vspace{0.2cm}
+
+\noindent\parbox{.925\textwidth}{\raggedright \textbf{B.Sc.\ Applied Physics \emph{summa cum laude,}} Columbia University, New York, New York (GPA: 4.0/4.0)}
+\parbox{.075\textwidth}{\raggedleft  \emph{~2016}}
 
 
 \vspace{0.6cm}
+
+
+
 
 
 \noindent {\large \textbf{\textsc{\textls[50]{Teaching}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
 \vspace{0.1mm}
-Teaching demonstrator on the following modules at Oxford:
+\noindent\parbox{.65\textwidth}{\raggedright \textbf{Co-teacher}}
+\parbox{.35\textwidth}{\raggedleft \emph{2024 Mar.\ (upcoming)}}
+Bioscience Doctoral Training Partnership, University of Oxford, Oxford, England
+\vspace{-.2cm}
 \begin{itemize}
 \setlength{\itemsep}{0pt}
-\item SABS Software engineering (2020--2021, 2021--2022, 2022--2023).
-\item SABS Mathematical modelling (Michaelmas 2020).
-\item SABS Scientific computing (Hilary 2021).
-\item SABS Simulated data and reproducible data analysis (Summer 2021).
-\item UNIQ+ Machine Learning and Bayesian Inference training session (Summer 2021).
+\item I am preparing and delivering several lectures on Bayesian Inference as part of the upcoming AI and Machine Learning Training Week.
+\end{itemize}
+
+\vspace{0.2cm}
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Demonstrator (Teaching Assistant)}}
+\parbox{.35\textwidth}{\raggedleft \emph{2020 Oct.--}}
+University of Oxford, Oxford, England
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item Mathematical, Physical, and Life Sciences (MPLS)
+\begin{itemize}
+\vspace{-.2cm}
+\setlength{\itemsep}{0pt}
+    \item Bayesian Inference (2024)
+\end{itemize}
+\item Sustainable Approaches to Biomedical Science (SABS)
+\begin{itemize}
+\vspace{-.2cm}
+\setlength{\itemsep}{0pt}
+\item Software engineering (2020--2021, 2021--2022, 2022--2023, 2023--2024)
+\item Mathematical modelling (Michaelmas 2020)
+\item Scientific computing (Hilary 2021)
+\item Simulated data and reproducible data analysis (Summer 2021)
+\end{itemize}
+\item UNIQ+ Graduate Access Programme
+\begin{itemize}
+\vspace{-.2cm}
+\setlength{\itemsep}{0pt}
+\item Machine Learning and Bayesian Inference training session (Summer 2021)
+\end{itemize}
 \end{itemize}
 
 
@@ -143,125 +168,166 @@ Teaching demonstrator on the following modules at Oxford:
 \vspace{0.6cm}
 
 
+
+
 \noindent {\large \textbf{\textsc{\textls[50]{Supervision}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
 \vspace{0.1mm}
-Co-supervisor for the following students:
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{College Advisor}}
+\parbox{.35\textwidth}{\raggedleft \emph{2023 Oct.--}}
+Reuben College, University of Oxford, Oxford, England
 \begin{itemize}
+\vspace{-.2cm}
 \setlength{\itemsep}{0pt}
-\item Kit Gallagher (rotation student and subsequent research projects, 2022--).
-\item Talal Ali (UNIQ+ research intern, 2023).
-\item Kamil Ebanks (UNIQ+ research intern, 2023).
-\item Katherine Shepherd (rotation student and PhD, 2022--2023).
-\item Ioana Bouros (rotation and PhD, 2021--2023).
+\item College advisor to four M.Sc.\ students.
 \end{itemize}
 
 
-\vspace{0.5cm}
+\vspace{0.2cm}
+
+\clearpage
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Co-Supervisor}}
+\parbox{.35\textwidth}{\raggedleft \emph{2021 June--}}
+Department of Computer Science, University of Oxford, Oxford, England
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item I contributed to supervision of research work for the following students:
+\begin{itemize}
+\item Kit Gallagher (rotation and subsequent research collaborations, 2022--).
+\item Katherine Shepherd (rotation and PhD, 2022--).
+\item Ioana Bouros (rotation and PhD, 2021--2023).
+\item Kamil Ebanks (UNIQ+ research internship, 2023).
+\item Talal Ali (UNIQ+ research internship, 2023).
+\end{itemize}
+\end{itemize}
+
+
+
+
+
+
+
+\vspace{0.6cm}
+
+
+
+
 
 \noindent {\large \textbf{\textsc{\textls[50]{Other Activities}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
 \vspace{0.1mm}
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{Bayesian Nonparametrics Reading Group}}
-\parbox{.25\textwidth}{\raggedleft 2023 Mar.--}
-\vspace{-.65cm}
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Guest Editor}}
+\parbox{.35\textwidth}{\raggedleft \emph{2023 Nov.--}}
+Journal of Theoretical Biology
+\vspace{-.2cm}
 \begin{itemize}
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item Founding member of a reading and study group for Bayesian nonparametrics at Oxford.
+\setlength{\itemsep}{0pt}
+\item I am working as a guest editor for the upcoming special issue ``Bioinference: Trends and Reproducibility'' of \emph{Journal of Theoretical Biology.}
 \end{itemize}
 
 \vspace{0.2cm}
 
 
-\vspace{0.1mm}
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{Statistical Consultant}}
-\parbox{.25\textwidth}{\raggedleft 2022 Aug.--2023 Mar.}
-Oxford University Innovation UKHSA COVID-19 Testing Evaluation
-\vspace{-.25cm}
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Statistical Consultant}}
+\parbox{.35\textwidth}{\raggedleft \emph{2022 Aug.--2023 Mar.}}
+EY-Oxford Health Analytics Consortium UKHSA COVID-19 testing evaluation
+\vspace{-.2cm}
 \begin{itemize}
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item I worked as a statistical consultant for Oxford University Innovation (OUI) in a collaboration with Ernst \& Young (EY) to conduct an impartial retrospective analysis of the COVID-19 testing program in England, commissioned by the UK Health Security Agency (UKHSA).
-\end{itemize}
-
-\vspace{0.2cm}
-
-
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{Co-founder of Oxford Statistical Epidemiology Reading Group\\ \vspace{.1cm}}}
-\parbox{.25\textwidth}{\raggedleft 2022 Oct.--2023 Mar.}
-\vspace{-.65cm}
-\begin{itemize}
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item I co-founded and organized the Oxford Statistical Epidemiology Reading Group, a biweekly journal club covering epidemiology, statistics, modelling, and related fields.
+\setlength{\itemsep}{0pt}
+\item I was subcontracted by Oxford University Innovation (OUI) to provide statistical and software consultancy for a retrospective analysis of the COVID-19 testing program in England commissioned by the UK Health Security Agency (UKHSA).
 \end{itemize}
 
 
 \vspace{0.2cm}
 
 
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{CoMo-DTC COVID-19 Collaboration Organizing Team}}
-\parbox{.25\textwidth}{\raggedleft 2020 Oct.--2022 Mar.}
-\vspace{-.65cm}
+
+
+
+
+
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Member of Organizing Committee}}
+\parbox{.35\textwidth}{\raggedleft \emph{2021 Sep.--2023 May}}
+Bioinference Conference
+\vspace{-.2cm}
 \begin{itemize}
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item I joined the organizing team for the collaboration between Oxford's and Cornell's COVID-19 International Modelling Consortium (CoMo) and the Doctoral Training Centre (DTC) at Oxford. Our work included investigating the development of high-quality software for CoMo's model of COVID-19 transmission, and implementing a hierarchy of compartmental transmission models for purposes of model comparison. A particular focus of our work was developing software, a web app, and pedagogical notebooks to help introduce newcomers to the field of epidemiological modelling.
+\setlength{\itemsep}{0pt}
+\item I worked on the organizing committees for the Bioinference 2022 and Bioinference 2023 conferences, and helped to raise funding for the conferences from the London Mathematical Society, the Heilbronn Institute, and the Oxford Computer Science department.
+\end{itemize}
+
+
+\vspace{0.2cm}
+
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Member of Organizing Team}}
+\parbox{.35\textwidth}{\raggedleft \emph{2020 Oct.--2022 Mar.}}
+CoMo-DTC COVID-19 Collaboration 
+\vspace{-.2cm}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item I joined the organizing team for the collaboration between the Doctoral Training Centre (DTC) at Oxford and Oxford's and Cornell's COVID-19 International Modelling Consortium (CoMo). Our work included investigating the development of high-quality software for CoMo's model of COVID-19 transmission, and implementing a hierarchy of compartmental transmission models for purposes of model comparison. A particular focus of our work was developing software, a web app, and pedagogical notebooks to help introduce newcomers to the field of epidemiological modelling.
+\end{itemize}
+
+\vspace{0.2cm}
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Co-founder}}
+\parbox{.35\textwidth}{\raggedleft \emph{2022 Oct.--2023 Mar.; 2023 Nov.--2023 Dec.}}
+Oxford Statistical Epidemiology Reading Group
+\vspace{-.2cm}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item I co-founded and co-organized a journal club and series of informal seminars covering epidemiology, statistics, mathematical modelling, and related subjects.
+\end{itemize}
+
+
+\vspace{0.2cm}
+
+
+
+
+
+
+
+\noindent\parbox{.65\textwidth}{\raggedright  \textbf{Member of Development Team}}
+\parbox{.35\textwidth}{\raggedleft \emph{2019 Oct.--}}
+PINTS (Probabilistic Inference for Noisy Time Series)
+\vspace{-.2cm}
+\begin{itemize}
+\setlength{\itemsep}{0pt}
+\item I am one of the developers contributing to the PINTS Python library, which enables the convenient application of optimization, Bayesian inference, and machine learning techniques to fit time series models to data. I have also worked to increase adoption of the software and teach new users how to use it. 
 \end{itemize}
 
 
 
 
-\vspace{.2cm}
 
 
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{Bioinference Conference Organizing Committee\\ \vspace{.1cm}}}
-\parbox{.25\textwidth}{\raggedleft 2021 Sep.--2023 May}
-\vspace{-.65cm}
-\begin{itemize}
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item I worked on the organizing committees for the Bioinference 2022 and Bioinference 2023 conferences, which were funded by the London Mathematical Society, the Heilbronn Institute, and the Oxford Computer Science department.
-\end{itemize}
-
-
-\vspace{.2cm}
-
-
-\noindent\parbox{.75\textwidth}{\raggedright \textbf{Shakespeare Appreciation Society}}
-\parbox{.25\textwidth}{\raggedleft 2022 Oct.--}
-\vspace{-.65cm}
-\begin{itemize}
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item Leading participant in the Shakespeare Society at the University of Munich, which runs regular virtual screenings and discussions of Shakespeare's plays and other relevant literature.
-\end{itemize}
-
-
-
-\vspace{0.5cm}
+\vspace{0.6cm}
 
 
 \noindent {\large \textbf{\textsc{\textls[50]{Skills}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
 \vspace{0.1mm}
 \textbf{Programming:} Python, C, C++, R, MATLAB, Stan.\\
-\textbf{Other computing:} MPI, Unix/Linux, SQL, Git, LSF, Slurm, AWS EC2, object-oriented programming,\\
-\phantom{\textbf{Other computing: }}software testing, continuous integration. \\
-\textbf{Design and web:} LaTeX, Blender, Illustrator, Inkscape, matplotlib, Plotly Dash, Flask.\\
+\textbf{Other computing:} MPI, Unix/Linux, SQL, Git, GitHub, GitHub Actions, LSF, Slurm, AWS EC2, object-oriented programming,\\
+\phantom{\textbf{Other computing: }}software testing, continuous integration, cloud computing. \\
+\textbf{Design and web:} LaTeX, Blender, Adobe Illustrator, Inkscape, matplotlib, Plotly Dash, Flask.\\
 \textbf{Other:} Office for National Statistics (ONS) Full accredited researcher.
 
-\vspace{0.5cm}
+\vspace{0.6cm}
 
 
 \clearpage
+
+
 
 \noindent {\large \textbf{\textsc{\textls[50]{Honors, Awards, and Funding}}}}\vspace{-2.75mm} \\
 \rule{\textwidth}{0.4pt}
@@ -279,29 +345,9 @@ Oxford University Innovation UKHSA COVID-19 Testing Evaluation
 \item C.\ Prescott Davis Scholar (Columbia University, 2016).
 \end{itemize}
 
-\vspace{0.5cm}
-
-
-
-\noindent {\large \textbf{\textsc{\textls[50]{References}}}}\vspace{-2.75mm} \\
-\rule{\textwidth}{0.4pt}
-\vspace{-.65cm}
-\begin{itemize}[leftmargin=*]
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\item David Gavaghan (Professor of Computational Biology, University of Oxford).\\ \hspace*{.5cm}david.gavaghan@dtc.ox.ac.uk
-
-\item Ben Lambert (Senior Lecturer of Mathematics, University of Exeter).\\
-\hspace*{.5cm}ben.c.lambert@gmail.com
-
-
-
-
-\end{itemize}
-
-
 \vspace{0.6cm}
+
+
 
 
 
@@ -333,8 +379,41 @@ Oxford University Innovation UKHSA COVID-19 Testing Evaluation
 \end{itemize}
 \hfill(\textsuperscript{\dag}$=$ joint first authorship.)
 
+
+
 \vspace*{.4cm}
-\noindent\textbf{Conference and workshop papers (refereed)}
+\noindent\textbf{Preprints}
+\vspace*{.5cm}
+\begin{itemize}[leftmargin=*]
+\setlength{\itemsep}{4pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+\vspace{-.5cm}
+
+\item {\color{gray}S.\ Bajaj,\textsuperscript{\dag} S.\ Chen,\textsuperscript{\dag}} \textbf{R.\ Creswell,\textsuperscript{\dag}} {\color{gray}R.\ Naidoo,\textsuperscript{\dag} J.\ L.-H.\ Tsui,\textsuperscript{\dag} O.\ Kolade, G.\ Nicholson, B.\ Lehmann, J.\ A.\ Hay, M.\ UG Kraemer, R.\ Aguas, C.\ A.\ Donnelly, T.\ Fowler, S.\ Hopkins, L.\ Cantrell, P.\ Dahal, L.\ J. White, K.\ Stepniewska, M.\ Voysey, B.\ Lambert, and EY-Oxford Health Analytics Consortium:} ``Understanding COVID-19 testing behaviour in England through a sociodemographic lens,'' medRxiv:2023.10.26.23297608 (2023).
+
+\item {\color{gray}L.\ Herriott,\textsuperscript{\dag} H.\ L.\ Capel,\textsuperscript{\dag} I.\ Ellmen,\textsuperscript{\dag} N.\ Schofield,\textsuperscript{\dag} J.\ Zhu,\textsuperscript{\dag} B.\ Lambert, D.\ Gavaghan, I.\ Bouros,} \textbf{R.\ Creswell,} {\color{gray}and K.\ Gallagher:} ``EpiGeoPop: A Tool for Developing Spatially Accurate Country-level Epidemiological Models,'' arXiv:2310.13468 (2023).
+
+\item \textbf{R.\ Creswell,} {\color{gray}K.\ M.\ Shepherd, B.\ Lambert, G.\ R.\ Mirams, C.\ L.\ Lei, S.\ Tavener, M.\ Robinson, and D.\ J.\ Gavaghan:} ``Understanding the impact of numerical solvers on inference for differential equation models,'' arXiv:2307.00749 (2023).  
+
+\item {\color{gray}K.\ Gallagher,} \textbf{R.\ Creswell,} {\color{gray} D.\ Gavaghan, and B.\ Lambert:} ``Identification and Attribution of Weekly Periodic Trends in Epidemiological Time Series Data,'' medRxiv:2023.06.13.23290903 (2023).
+
+
+\item {\color{gray}R.\ Naidoo, B.\ Andersen-Waine, P.\ Dahal, S.\ Dickinson, B.\ Lambert, M.\ C.\ Mills,  C.\ Molyneux, E.\ Rowe, S.\ Pinto-Duschinsky, K.\ Stepniewska, R.\ Shretta, M.\ Voysey, M.\ Wanat, G.\ Yenidogan, L.\ J.\ White,} \textbf{and EY-Oxford Health Analytics Consortium:} ``A multistage mixed-methods evaluation of the UKHSA testing response during the COVID-19 pandemic in England,'' medRxiv:2022.10.27.22281604 (2022).
+
+
+\item {\color{gray}K.\ Gallagher,\textsuperscript{\dag} I.\ Bouros,\textsuperscript{\dag} N.\ Fan,\textsuperscript{\dag} E.\ Hayman,\textsuperscript{\dag} L.\ Heirene,\textsuperscript{\dag} P.\ Lamirande,\textsuperscript{\dag} A.\ Lemenuel-Diot, B.\ Lambert, D.\ J.\ Gavaghan,} \textbf{and R.\ Creswell:} ``Epidemiological Agent-Based Modelling Software (Epiabm),'' arXiv:2212.04937 (2022).
+
+
+\item \textbf{R.\ Creswell,} {\color{gray} B.\ Lambert, C.\ L.\ Lei, M.\ Robinson, and D.\ Gavaghan:} ``Using flexible noise models to avoid noise model misspecification in inference of differential equation time series models,'' arXiv:1410.5093 (2020).
+\end{itemize}
+\hfill(\textsuperscript{\dag}$=$ joint first authorship.)
+
+
+
+
+\vspace*{.4cm}
+\noindent\textbf{Conference workshop papers (refereed)}
 \vspace*{.5cm}
 \begin{itemize}[leftmargin=*]
 \setlength{\itemsep}{4pt}
@@ -357,36 +436,13 @@ Workshop on Computational Biology}, Stockholm, Sweden (2018).
 \setlength{\parskip}{0pt}
 \setlength{\parsep}{0pt}
 \vspace{-.5cm}
-\item \textbf{EY--Oxford Health Analytics Consortium:} \emph{Evaluation of the national COVID-19 testing programme in England between October 2020 and March 2022} (2023).
+\item \textbf{R.\ Creswell:} \emph{Bayesian inference for biological time series,} University of Oxford Doctoral thesis (2023).
+\item {\color{gray}L.\ White, R.\ Naidoo, B.\ Andersen-Waine, B.\ Lambert, S.\ Pinto-Duschinsky, E.\ Rowe, R.\ Shretta, K.\ Stepniewska, M.\ Voysey, G.\ Yenidogan,} \textbf{and EY--Oxford Health Analytics Consortium:} \emph{Evaluation of the national COVID-19 testing programme in England between October 2020 and March 2022} (2023).
 
 
 \end{itemize}
 
 
-\vspace*{.4cm}
-\noindent\textbf{Preprints}
-\vspace*{.5cm}
-\begin{itemize}[leftmargin=*]
-\setlength{\itemsep}{4pt}
-\setlength{\parskip}{0pt}
-\setlength{\parsep}{0pt}
-\vspace{-.5cm}
-
-
-
-\item \textbf{R.\ Creswell,} {\color{gray}K.\ M.\ Shepherd, B.\ Lambert, G.\ R.\ Mirams, C.\ L.\ Lei, S.\ Tavener, M.\ Robinson, and D.\ J.\ Gavaghan:} ``Understanding the impact of numerical solvers on inference for differential equation models,'' arXiv:2307.00749 (2023).  
-
-\item {\color{gray}K.\ Gallagher,} \textbf{R.\ Creswell,} {\color{gray} D.\ Gavaghan, and B.\ Lambert:} ``Identification and Attribution of Weekly Periodic Trends in Epidemiological Time Series Data,'' medRxiv:2023.06.13.23290903 (2023).
-
-
-\item {\color{gray}R.\ Naidoo, B.\ Andersen-Waine, P.\ Dahal, S.\ Dickinson, B.\ Lambert, M.\ C.\ Mills,  C.\ Molyneux, E.\ Rowe, S.\ Pinto-Duschinsky, K.\ Stepniewska, R.\ Shretta, M.\ Voysey, M.\ Wanat, G.\ Yenidogan, L.\ J.\ White,} \textbf{and the EY-Oxford Health Analytics Consortium:} ``A multistage mixed-methods evaluation of the UKHSA testing response during the COVID-19 pandemic in England,'' medRxiv:2022.10.27.22281604 (2022).
-
-
-\item {\color{gray}K.\ Gallagher,\textsuperscript{\dag} I.\ Bouros,\textsuperscript{\dag} N.\ Fan,\textsuperscript{\dag} E.\ Hayman,\textsuperscript{\dag} L.\ Heirene,\textsuperscript{\dag} P.\ Lamirande,\textsuperscript{\dag} A.\ Lemenuel-Diot, B.\ Lambert, D.\ J.\ Gavaghan,} \textbf{and R.\ Creswell:} ``Epidemiological Agent-Based Modelling Software (Epiabm),'' arXiv:2212.04937 (2022).
-
-
-\item \textbf{R.\ Creswell,} {\color{gray} B.\ Lambert, C.\ L.\ Lei, M.\ Robinson, and D.\ Gavaghan:} ``Using flexible noise models to avoid noise model misspecification in inference of differential equation time series models,'' arXiv:1410.5093 (2020).
-\end{itemize}
 
 \vspace*{.4cm}
 
@@ -397,6 +453,7 @@ Workshop on Computational Biology}, Stockholm, Sweden (2018).
 \setlength{\parskip}{0pt}
 \setlength{\parsep}{0pt}
 \vspace{-.5cm}
+\item AI in Science Colloquium, Reuben College, Oxford, England \emph{(2024, upcoming).}
 \item Inference for Expensive Systems in Mathematical Biology, Oxford, England (2022).
 \item Microbiome Mini-Symposium (on the event of the visit of the Wageningen University Microbiology Laboratory to Harvard Medical School), Boston, Massachusetts (2019).
 \item Forum for Advanced Biomedical Computation, Boston, Massachusetts (2018).
@@ -412,13 +469,15 @@ Workshop on Computational Biology}, Stockholm, Sweden (2018).
 \setlength{\parskip}{0pt}
 \setlength{\parsep}{0pt}
 \vspace{-.5cm}
+\item Epidemics, Bologna, Italy (2023).
+\item Eric and Wendy Schmidt AI in Science Postdoctoral Fellows Convening, Toronto, Canada (2023).
 \item The Royal Society, Modelling the Covid-19 Pandemic: Achievements and Lessons, London, England (2022).
-\item Brigham \& Women's Hospital Pathology Research Celebration, Boston, USA (2019).
-\item MIT-Harvard Microbiome Symposium, Cambridge, USA (2019).
+\item Brigham \& Women's Hospital Pathology Research Celebration, Boston, Massachusetts (2019).
+\item MIT-Harvard Microbiome Symposium, Cambridge, Massachusetts (2019).
 \item ICML and IJCAI Workshop on Computational Biology, Stockholm, Sweden (2018).
-\item Harvard Medical School Pathology Research Retreat, Boston, USA (2018).
-\item MIT-Harvard Microbiome Symposium, Cambridge, USA (2018).
-\item Computational Aspects of Biological Information, Microsoft Research New England, Cambridge, USA (2018).
+\item Harvard Medical School Pathology Research Retreat, Boston, Massachusetts (2018).
+\item MIT-Harvard Microbiome Symposium, Cambridge, Massachusetts (2018).
+\item Computational Aspects of Biological Information, Microsoft Research New England, Cambridge, Massachusetts (2018).
 \end{itemize}
 
 
